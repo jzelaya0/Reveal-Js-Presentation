@@ -2,9 +2,51 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title>Reveal.Js Demo</title>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 	</head>
+
 	<body>
+			<!-- Wrap all of presentation in a div with "reveal" class -->
+			<div class="reveal">
+				<!-- Wrap all slides in a single "slides" class -->
+				<div class="slides">
+					<!-- All slides go in this div -->
+					<!-- Reveal sees each section as a single slide -->
+
+					<!-- Slide 1 -->
+					<section>
+						<h1>Slide 1</h1>
+						<p>First Slide is Here</p>
+					</section>
+					<!-- Slide 2 -->
+					<section>
+						<h1>Slide 2</h1>
+						<p>Second Slide is Here</p>
+					</section>
+					<!-- Slide 3 -->
+					<section>
+						<h1>Slide 3</h1>
+						<p>Third Slide is Here</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- LOAD REVEAL JS SCRIPTS -->
+			<script src="lib/js/head.min.js"></script>
+			<script src="js/reveal.js"></script>
+			<!-- INITIALIZE REVEAL JS -->
+			<script>
+				Reveal.initialize({
+					controls: true,
+					controls: true,
+					progress: true,
+					history: true,
+					center: true,
+					transition: 'slide'
+				})
+			</script>
 
 	</body>
 </html>
